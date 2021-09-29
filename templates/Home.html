@@ -1,9 +1,157 @@
-{% extends 'base.html' %}
-
-{% block content %}
-<div class="w-full h-full min-h-screen flex items-center justify-center bg-gray-200">
-    <div class="w-1/2 bg-white rounded-lg p-10 shadow-xl">
-        <p class="text-center text-lg">Hola {{ user.username }}, bienvenido de nuevo</p>
+{% extends 'base.html' %} {% block content %}
+<div class="w-full h-full min-h-screen flex justify-center bg-gray-200">
+  <div class="w-11/12 my-11 flex gap-2">
+    <div class="w-2/6 bg-white p-2 rounded-xl shadow-xl h-full">
+      <p class="text-xl">Mis Solicitudes</p>
+      <div class="my-2 p-2 w-full border-b-2 flex gap-2">
+        <div class="w-3/12">
+          <img
+            src="https://hirudinean-allies.000webhostapp.com/succesful/vauxoo/vauxoo.png"
+            alt="Vauxoo logo"
+            class="w-full"
+          />
+        </div>
+        <div class="w-9/12">
+          <p>Frontend Developer</p>
+          <p class="text-sm">Vauxoo</p>
+          <p class="text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+            eaque? Sed laudantium placeat repellat...
+          </p>
+        </div>
+      </div>
+      <div class="my-2 p-2 w-full border-b-2 flex gap-2">
+        <div class="w-3/12">
+          <img
+            src="https://hirudinean-allies.000webhostapp.com/succesful/vauxoo/vauxoo.png"
+            alt="Vauxoo logo"
+            class="w-full"
+          />
+        </div>
+        <div class="w-9/12">
+          <p>Frontend Developer</p>
+          <p class="text-sm">Vauxoo</p>
+          <p class="text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+            eaque? Sed laudantium placeat repellat...
+          </p>
+        </div>
+      </div>
+      <div class="my-2 p-2 w-full border-b-2 flex gap-2">
+        <div class="w-3/12">
+          <img
+            src="https://hirudinean-allies.000webhostapp.com/succesful/vauxoo/vauxoo.png"
+            alt="Vauxoo logo"
+            class="w-full"
+          />
+        </div>
+        <div class="w-9/12">
+          <p>Frontend Developer</p>
+          <p class="text-sm">Vauxoo</p>
+          <p class="text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+            eaque? Sed laudantium placeat repellat...
+          </p>
+        </div>
+      </div>
     </div>
+    <div class="w-4/6 bg-white py-7 px-4 rounded-xl shadow-xl max-h-screen overflow-y-scroll">
+      <input
+        type="text"
+        class="border w-full rounded-md shadow-lg p-2"
+        placeholder="Frontend Developer en remoto"
+      />
+      <div class="mt-7">
+        <div class="w-full flex border-b-2 pb-3">
+          <div class="w-1/6">
+            <img
+              src="https://media-exp1.licdn.com/dms/image/C560BAQF_TTkqvMRHOQ/company-logo_100_100/0/1630087505737?e=1640822400&v=beta&t=RFCXUW6ByRORMF9q_HHzM8TqFtHsI2ixvR0ijARdlZo"
+              alt="Tellur logo"
+              class="w-full p-2"
+            />
+          </div>
+          <div class="w-5/6 pl-2">
+            <p class="text-lg">Web Developer</p>
+            <p class="text-sm text-gray-500">Tellur</p>
+            <p class="text-sm text-gray-500">Mexico (Remoto)</p>
+            <p class="text-red-500 text-sm">$15,000 - $20,000</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+              exercitationem amet veniam ea illum quas voluptatem reiciendis
+              facilis? Cum, fugiat eveniet? Magni ducimus quas veniam placeat!
+              Dolorum incidunt eveniet est!
+            </p>
+            <a href="" class="text-sm text-blue-500">Ver detalles...</a>
+          </div>
+        </div>
+        <div class="w-full flex border-b-2 pb-3">
+          <div class="w-1/6">
+            <img
+              src="https://media-exp1.licdn.com/dms/image/C560BAQGTYIBmRBq8RQ/company-logo_100_100/0/1628372979099?e=1640822400&v=beta&t=2QEu5Q5faw_bIEQwyWh0AeGhILzE1PRBl6nSxCrhBdw"
+              alt="Tellur logo"
+              class="w-full p-2"
+            />
+          </div>
+          <div class="w-5/6 pl-2">
+            <p class="text-lg">Desarrollador de javascript</p>
+            <p class="text-sm text-gray-500">Honka</p>
+            <p class="text-sm text-gray-500">Mexico (Remoto)</p>
+            <p class="text-red-500 text-sm">$25,000 - $33,000</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+              exercitationem amet veniam ea illum quas voluptatem reiciendis
+              facilis? Cum, fugiat eveniet? Magni ducimus quas veniam placeat!
+              Dolorum incidunt eveniet est!
+            </p>
+            <a href="" class="text-sm text-blue-500">Ver detalles...</a>
+          </div>
+        </div>
+        <div class="w-full flex border-b-2 pb-3">
+            <div class="w-1/6">
+              <img
+                src="https://media-exp1.licdn.com/dms/image/C560BAQGTYIBmRBq8RQ/company-logo_100_100/0/1628372979099?e=1640822400&v=beta&t=2QEu5Q5faw_bIEQwyWh0AeGhILzE1PRBl6nSxCrhBdw"
+                alt="Tellur logo"
+                class="w-full p-2"
+              />
+            </div>
+            <div class="w-5/6 pl-2">
+              <p class="text-lg">Desarrollador django</p>
+              <p class="text-sm text-gray-500">Honka</p>
+              <p class="text-sm text-gray-500">Mexico (Remoto)</p>
+              <p class="text-red-500 text-sm">$45,000 - $66,000</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                exercitationem amet veniam ea illum quas voluptatem reiciendis
+                facilis? Cum, fugiat eveniet? Magni ducimus quas veniam placeat!
+                Dolorum incidunt eveniet est!
+              </p>
+              <a href="" class="text-sm text-blue-500">Ver detalles...</a>
+            </div>
+          </div>
+          <div class="w-full flex border-b-2 pb-3">
+            <div class="w-1/6">
+              <img
+                src="https://media-exp1.licdn.com/dms/image/C560BAQGTYIBmRBq8RQ/company-logo_100_100/0/1628372979099?e=1640822400&v=beta&t=2QEu5Q5faw_bIEQwyWh0AeGhILzE1PRBl6nSxCrhBdw"
+                alt="Tellur logo"
+                class="w-full p-2"
+              />
+            </div>
+            <div class="w-5/6 pl-2">
+              <p class="text-lg">Desarrollador de javascript</p>
+              <p class="text-sm text-gray-500">Honka</p>
+              <p class="text-sm text-gray-500">Mexico (Remoto)</p>
+              <p class="text-red-500 text-sm">$25,000 - $33,000</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                exercitationem amet veniam ea illum quas voluptatem reiciendis
+                facilis? Cum, fugiat eveniet? Magni ducimus quas veniam placeat!
+                Dolorum incidunt eveniet est!
+              </p>
+              <a href="" class="text-sm text-blue-500">Ver detalles...</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}
