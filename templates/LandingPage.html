@@ -1,0 +1,34 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'styles/landingpage/cover.css' %}">
+{% endblock %}
+
+{% block content %}
+  <div class="LandingPage">
+    <div class="LandingPage_container">
+      <div class="container_slogan">
+        <h1>Encuentra el empleo de tus sueños</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="container_info">
+        <div class="item">
+          <img src="{% static 'images/landingpage/send.svg' %}" alt="envia solicitud" />
+          <h2>Envia tu solicitud</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="item">
+          <img src="{% static 'images/landingpage/check.svg' %}" alt="revisa propuesta" />
+          <h2>Llega a un acuerdo</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="item">
+          <img src="{% static 'images/landingpage/approve.svg' %}" alt="aprueva trabajo" />
+          <h2>Firma un contrato</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

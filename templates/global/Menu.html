@@ -1,0 +1,22 @@
+<div class="Menu">
+  <div class="Menu_logo">
+    <a href="{% url 'landingpage' %}">Jobber</a>
+  </div>
+  <nav>
+    <ul>
+      <li>
+        <a href="{% url 'landingpage' %}">Home</a>
+      </li>
+      <li>About</li>
+      {% if user.is_authenticated %}
+        <li>
+          <a href="{% url 'logout' %}">Log Out</a>
+        </li>
+      {% else %}
+        <li>
+          <a href="{% url 'login' %}">Log In</a>
+        </li>
+      {% endif %}
+    </ul>
+  </nav>
+</div>

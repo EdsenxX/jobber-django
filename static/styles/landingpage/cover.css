@@ -1,0 +1,74 @@
+.LandingPage {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.LandingPage .LandingPage_container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: #fff;
+}
+.LandingPage .LandingPage_container::after {
+    z-index: -1;
+    content: "";
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../../images/landingpage/cover.jpg");
+    background-position: center center;
+    background-size: cover;
+    filter: brightness(0.5) contrast(130%);
+    clip-path: polygon(0 0, 100% 0%, 100% 87%, 0% 100%);
+    background-position: fixed;
+}
+.LandingPage .LandingPage_container .container_slogan {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.LandingPage .LandingPage_container .container_slogan h1 {
+    font-size: 4.5vw;
+    font-weight: 600;
+}
+.LandingPage .LandingPage_container .container_slogan p {
+    font-size: 1.7vw;
+}
+.LandingPage .LandingPage_container .container_info {
+    width: 80%;
+    height: 38vh;
+    margin: 0 auto;
+    border-radius: 2vw;
+    display: flex;
+    box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.7);
+    background-color: #fff;
+    padding: 1vw;
+    justify-content: space-between;
+    color: black;
+}
+.LandingPage .LandingPage_container .container_info .item {
+    margin: 1vw 0;
+    padding: 0 1.1vw;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+.LandingPage .LandingPage_container .container_info .item img {
+    height: 15vh;
+    margin-bottom: 1vw;
+}
+.LandingPage .LandingPage_container .container_info .item h2 {
+    font-size: 1.6vw;
+    text-align: center;
+}
+.LandingPage .LandingPage_container .container_info .item p {
+    font-size: 1.2vw;
+    margin-top: 1vw;
+}
